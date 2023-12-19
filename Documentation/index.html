@@ -1,0 +1,401 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>English Grammar Quiz</title>
+
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">English Grammar Quiz Documentation file v 1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">English Grammar Quiz</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created : 27/02/2021<br>
+					Last Modification : 27/02/2021<br>
+					By : Legandan <br>
+					Email : <a href="mailto:y4e@hotmail.fr">y4e@hotmail.fr</a>.<br>
+					Store : <a href="https://codecanyon.net/user/legandan/portfolio">CodeCanyon Legandan</a>.<br>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing <b> English Grammar Quiz</b>. If you have any questions that are beyond the scope of this help file, please send me email at <a href="mailto:y4e@hotmail.fr">y4e@hotmail.fr</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Project Table Contents</h2>
+		<ol class="alpha">
+			<li><a href="#start">Getting Started</a></li>
+			<li><a href="#howtoimport">Import project in Android studio</a></li>
+			<li><a href="#structure">Project Structure</a></li>
+			<li><a href="#packageName">How to change Package Name</a></li>
+			<li><a href="#changeappnameanddescription">Change App Name & App Description</a></li>
+			<li><a href="#changeappicon">Change App Icon</a></li>
+			<li><a href="#admob">How to change Admob Information </a></li>
+			<li><a href="#privacy">How to change Privacy policy & Play Store name </a></li>
+			<li><a href="#ads">Control Showing Ads</a></li>
+			<li><a href="#database">Changing Database Data SQLITE</a></li>
+			<li><a href="#export">How to Export project to Apk </a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="start"><strong>Getting Started : Java & Android Studio Installation</strong> - <a href="#toc">top</a></h3>
+		
+		<p> Download and Install Java This section very important for you if this is first time develop android, if you already develop android project you can SKIP this page. Download and Install Java</p>
+		
+		<b><p> Download and Install Java : </p> </b>
+		
+		<p> You can download latest JDK from this url :  <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"
+                           target="_blank"><span>http://www.oracle.com/technetwork/java/javase/downloads/index.html</span>
+                        </a> </p> 
+		
+		<img src="assets/images/javaDownload.png" alt="HTML Structure" />
+		
+		<b><p> Download and Install Android Studio : </p> </b>
+		
+		<p> You can download latest Android Studio from this url  :  <a href="https://developer.android.com/studio"
+                           target="_blank"><span>https://developer.android.com/studio</span>
+                        </a> </p> 
+						
+					<img src="assets/images/androidStudio.png" alt="HTML Structure" width="1100" height="600" />	
+		<hr>
+		<hr>
+		
+		<h3 id="howtoimport"><strong>A) Import project in Android studio</strong> - <a href="#toc">top</a></h3>
+		
+		<p> Step 1:- Select Import project and find your KidsIslamicDuas project</p>
+		
+		<hr>
+		
+		<img src="assets/images/impo1.png" alt="HTML Structure" />
+		
+		<p> Step 2:- Select your current project then click to build.gradle and click ok button and wait few minute</p>
+		
+		<img src="assets/images/impo2.png" alt="HTML Structure" />
+		
+		<hr>
+		
+		<h3 id="structure"><strong>Structure : Project Files </strong> - <a href="#toc">top</a></h3>
+		
+		<img src="assets/images/structure.png" alt="HTML Structure" /> 
+		</br>
+		<b><p> Files and Content : </p></b>
+		
+		<p> 
+		
+1 – Activity: Contain App Activities. </br>
+
+2 – Adapter: Contain Adapter for ListView.</br>
+
+3 – Database: Contain Sqlite database class</br>
+
+4 – dialog : Dialog class.</br>
+
+5 – Model : Model class  for adapters.</br>
+
+6 – Constant.java: Contain Function to control how many clicks to show ads</br>
+
+7 – MyApplications.java: For initializing Stetho sdk.</br>
+
+8 – StartActivity.java: First Acivity Show when start running app.</br>
+
+
+
+		</p>
+		
+		<hr>
+
+
+		<h3 id="packageName"><strong>How to change Package Name </strong> - <a href="#toc">top</a></h3>
+
+		<p> 1. Follow this Steps : Refactor / Rename Files</p>
+		<p> <font color="red">Do Refactor and Rename the file to your own Name</font></p> </br>
+		
+		<img src="assets/images/pack_name_1.png" alt="packageName"/>
+		</br>
+		</br>
+		<img src="assets/images/pack_name_0.png" alt="packageName"/>
+		</br>
+		</br>
+		<p> 1 - Click On Build.gradle (Module:app)</p>
+		<img src="assets/images/pack_name_2.png" alt="packageName"/>
+		</br>
+		</br>
+		<p> 2 – Change The Name to your Own Name </p>
+		<img src="assets/images/pack_name_3.png" alt="packageName"/>
+		</br>
+		</br>
+		<p> 3 – Click Sync Now  </p>
+		<img src="assets/images/pack4.png" alt="packageName"/>
+	</br>
+	</br>
+	</br>
+	<b> Or follow this instruction to change your package name: </b>
+                        <a href="https://stackoverflow.com/a/29092698"
+                           target="_blank"><span>https://stackoverflow.com/a/29092698</span></span>
+                        </a>
+	</br>
+	</br>
+		<hr>
+		
+		<h3 id="changeappnameanddescription">
+		<strong>Changing App Name & About Text </strong> - <a href="#toc">top</a></h3>
+		
+		<p>
+		
+		1. Open app/src/main/res/values/strings.xml .</br>
+		2. Change the value of String app_name To your Own App name</br>
+		3. Change the value of String about_text to your own app about.</br>
+
+		</p>
+		
+		<img src="assets/images/app_name.png" alt="HTML Structure"/>
+		</br>
+		</br>
+		</br>
+		
+		<h3 id="changeappicon">
+		<strong>Changing App Icon </strong> - <a href="#toc">top</a></h3>
+		</br>
+		</br>
+		
+		<p>
+			
+			1. Open app/src/main/res/mipmap/ic_launcher icon.</br>
+			2. Make your own icons.</br>
+			3. Replace the ic_launcher.png by your Own icon with the same size.</br>
+
+			</p>
+		
+		<img src="assets/images/icon.png" alt="HTML Structure"/>
+		
+		<p>
+		
+		<b>Icon is must to upload application on play store. Bellow is the list of icon name with it's size. It must be in PNG file format.</b></br>
+
+   * Store Icon.png: 512 x 512 pixel (for PlayStore)</br>
+   * Folder name:-> mipmap-hdpi and icon name: ic_launcher.png 72 x 72 pixel</br>
+   * Folder name:-> mipmape-mdpi and icon name: ic_launcher.png 48 x 48 pixel</br>
+   * Folder name:-> mipmap-xhdpi and icon name: ic_launcher.png 96 x 96 pixel</br>
+   * Folder name:-> mipmap-xxhdpi and icon name: ic_launcher.png 144 x 144 pixel</br>
+   * Folder name:-> mipmap-xxxhdpi and icon name: ic_launcher.png 192 x 192 pixel.
+
+		
+		
+		</p>
+		
+		<p>Refrence site:-<a href="https://developer.android.com/guide/practices/ui_guidelines/icon_design.html" target="_blank">https://developer.android.com/guide/practices/ui_guidelines/icon_design.html</a></p>
+		<hr>
+		
+		
+		
+		<h3 id="admob"><strong>Changing Admob - Interstitial - Admob id - App ID - Admob Publisher ID</strong> - <a href="#toc">top</a></h3>
+		
+		<p>
+			1. Open app/src/main/res/values/strings.xml .</br>
+			2. Replace strings value to your own informations
+		
+		</p>
+		</br>
+		
+		<img src="assets/images/admob.png" alt="HTML Structure"/>
+		</br>
+		</br>
+		
+		<p>Follow this instruction to get your App Publisher ID and Banner & Interstital ad Unit id : 
+		<a href="https://support.google.com/admob/answer/7356431?hl=en"
+                           target="_blank"><span>https://support.google.com/admob/answer/7356431?hl=en</span></span>
+                        </a>
+		</p>
+		
+		<p>Follow this instruction to get your Admob ID : <a href="https://support.google.com/admob/answer/2784578?hl=en"
+                           target="_blank"><span>https://support.google.com/admob/answer/2784578?hl=en</span></span>
+                        </a> </p>
+		</br>
+		
+		<hr>
+		
+		<h3 id="privacy">
+		<strong>Changing privacy policy - Store link - Email</strong> - <a href="#toc">top</a></h3>
+		
+		<p>
+1 - Go to app/src/main/assets/privacy/index.html </br>
+2 - Open it with Notepad++ and Replace "CompanyName" to your own company name </br>
+
+		</p>
+		
+		
+		<strong><font color="red"> Don't forget to change privacy policy URL : </font></strong>
+		 </br>
+		  </br>
+		
+				<p>
+1. Go to app/src/main/res/values/strings.xml.</br>
+2. Enter your URL inside "privacy policy" string tag : www.site.com/privacy_policy.html</br>
+3. Change Store URL link to your Developer Store : https://play.google.com/store/apps/developer?id=xxxxxx </br>
+4. Change Email to your Developer Email to receive Feedback from users : company@example.com </br>
+
+
+		</p>
+		
+		<img src="assets/images/privacy.png" alt="HTML Structure"/>
+		
+		<hr>
+		
+		<h3 id="ads">
+		<strong>Changing number of clicks to display interstitial ads</strong> - <a href="#toc">top</a></h3>
+		
+		<img src="assets/images/ads_1.png" alt="HTML Structure" />
+		</br>
+		</br>
+		<img src="assets/images/ads_2.png" alt="HTML Structure" />
+	
+		 </br>
+		</br>
+		
+		 <h3 id="database">
+		 <strong>How to Edit Data inside Sqlite Database</strong> - <a href="#toc">top</a></h3>
+		
+		<p> 
+		
+		1. Download SQLite Browser from the link: http://sqlitebrowser.org/ </br>
+		2. After that go to project folder and navigate to assets/english_test.db . </br>
+		3. Drag & drop that file "english_test.db" to SQLite Browser. </br>
+		
+		</p>
+		
+		 <strong><font color="red"> 1 - Level Table : </font></strong>
+		 
+		 <p>To add new Level and question please follow those instructions :  </p>
+		
+		<img src="assets/images/table_conversation.png" alt="HTML Structure" />
+		<br/>
+				<br/>
+		<img src="assets/images/add_2.png" />
+		<br/>
+	<br/>
+				<br/>
+		<img src="assets/images/add_3.png" />
+		<br/>
+		<br/>
+				<br/>
+		<img src="assets/images/add_4.png" />
+		<br/>
+		<br/>
+		<br/>
+		
+				<br/>
+			
+ <strong><p>Results  will be like this when you start app :</p><font color="red"> don't forget to reinstall the app from your device after you edit the database then run it again</font></strong>
+		 			
+				
+		<img src="assets/images/r1.png" alt="HTML Structure" />
+			
+		<br/>
+		<br/>
+		<b><p> app questions </p></b>
+			
+		<br/>
+		
+		<img src="assets/images/r2.png" alt="HTML Structure" />
+		<br/>
+		
+		<br/>
+		<b><p> Don’t forget to Change / add Items Images : </p></b>
+		<p>Items Images Stored in : app\src\main\assets\images</p>
+		
+		<br/>
+		
+		<br/>
+
+		
+		<h3 id="export">
+		<strong>How to Export Project to APk file </strong> - <a href="#toc">top</a></h3>
+		
+		<b><p> To export file to apk please follow this instructions </p></b>
+		</br>
+		<p> 1 - Select Build >>> Generat Signed Bundle / APK </p>
+		
+		<img src="assets/images/export_0.png" alt="HTML Structure" />
+		</br>
+		</br>
+		<p> 
+		1 - Select APK </br>
+		2 - Click Next
+
+		</p>
+		<img src="assets/images/export_1.png" alt="HTML Structure" />
+		</br>
+		</br>
+		<p> Creat New Key Store </p>
+		<img src="assets/images/export_2.png" alt="HTML Structure" />
+		</br>
+		<p> 
+			1 - Choose Key Store path </br>
+			2 - Set a password for the key Store </br>
+			3 - Set a title to the Alias </br>
+			4 - Set a password for the Alias </br>
+			5 - fill the remaing details </br>
+			6 - Click ok </br>
+
+		</p>
+		</br>
+		</br>
+		<img src="assets/images/export_3.png" alt="HTML Structure" />
+		
+		<p>After clicking "OK" on The last step above, it will show you this table</p>
+		<p>Then Click Next</p>
+		<img src="assets/images/export_4.png" alt="HTML Structure" />
+		</br>
+		</br>
+		<p>
+		1 - Choose release	</br>
+		2 - Choose V1 and V2 as a signature Versions	</br>
+		3 - Then Click Finish	</br>
+		
+		
+		</p>
+		
+		<img src="assets/images/export_5.png" alt="HTML Structure" />
+		</br>
+		</br>
+		<p>Congratulation You Export The project to an apk file Ready to upload to play store</p>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this "English Grammar Quiz" application. As I said at the beginning, I'd be glad to help you if you have any questions relating to this application. Contact in email <a href="mailto:y4e@hotmail.fr">y4e@hotmail.fr</a> I'll do my best to assist you. </p> 
+		
+	
+		
+		</br>
+		
+		<h2> <b> If you like this project ? Please write me a 5 stars review on codecanyon ! </b></h2></br>
+		</br>
+		
+		<p class="append-bottom alt large"><strong>Thnaks you.</strong></p></br>
+		
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
